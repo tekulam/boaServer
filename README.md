@@ -13,7 +13,7 @@ A comprehensive AI assistant that helps engineers troubleshoot, analyze, and res
 
 ## Architecture
 
-### Revised 24-Hour MVP Architecture for AI-Powered Oncall Support Assistant
+### 24-Hour MVP Architecture for AI-Powered Oncall Support Assistant
 
 Given your specific requirements, I'll update the architecture to incorporate Gemini Pro, MCP server integration, and the ticket-based workflow.
 
