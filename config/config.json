@@ -1,0 +1,70 @@
+{
+  "app": {
+    "name": "OncallTool",
+    "version": "1.0.0"
+  },
+  "impact": {
+    "severityLevels": ["critical", "high", "medium", "low"],
+    "evaluationMetrics": ["service_impact", "customer_impact", "revenue_impact", "security_impact"],
+    "notificationThresholds": {
+      "critical": {
+        "responseTime": 5,
+        "escalationTime": 15
+      },
+      "high": {
+        "responseTime": 15,
+        "escalationTime": 30
+      },
+      "medium": {
+        "responseTime": 30,
+        "escalationTime": 60
+      },
+      "low": {
+        "responseTime": 60,
+        "escalationTime": 120
+      }
+    }
+  },
+  "troubleshooting": {
+    "automatedChecks": ["logs", "metrics", "traces", "recent_deployments", "configuration_changes"],
+    "checkpointIntervals": 15,
+    "maxAutomatedTime": 120
+  },
+  "refactoring": {
+    "analysisTools": ["static_analysis", "dependency_check", "test_coverage", "performance_profiling"],
+    "automationLevel": "assisted",
+    "requiredApprovals": 2
+  },
+  "ai": {
+    "enabled": true,
+    "models": {
+      "impactAssessment": {
+        "name": "impact-evaluator",
+        "version": "1.0.0",
+        "endpoint": "https://api.example.com/models/impact-evaluator"
+      },
+      "troubleshooting": {
+        "name": "incident-solver",
+        "version": "1.0.0",
+        "endpoint": "https://api.example.com/models/incident-solver"
+      },
+      "codeAssistant": {
+        "name": "code-refactor",
+        "version": "1.0.0",
+        "endpoint": "https://api.example.com/models/code-refactor"
+      }
+    },
+    "contextWindow": 16000,
+    "responseTimeout": 30
+  },
+  "future": {
+    "learningEnabled": true,
+    "dataRetentionDays": 90,
+    "adaptiveThresholds": true,
+    "automaticUpdates": {
+      "enabled": true,
+      "frequency": "weekly",
+      "requiredApproval": true
+    }
+  }
+}
